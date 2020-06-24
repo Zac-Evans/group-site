@@ -61,10 +61,11 @@
                     shirt: "",
                 }
          function formSubmitted() {
+                var theSize = document.getElementById("shirt_size")
                 var contactForm =  {
                     'name': document.getElementById("form_name").value,
                     'email': document.getElementById("form_email").value,
-                    'shirt': document.getElementById("shirt_size").value,
+                    'shirt': theSize.options[theSize.shirt_size].value
                 }
                 console.log (contactForm);
          }
