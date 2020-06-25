@@ -73,6 +73,8 @@
                 }
                 console.log (contactForm);
          }
+            
+            event.preventDefault();
         </script>
     </head>
     <body>
@@ -116,7 +118,7 @@
               <option>XL</option>
             </select>
             <br>
-            <button onclick='formSubmitted()' type="button" class="btn btn-primary">Submit</button>
+            <button onclick='formSubmitted()' type="submit" class="btn btn-primary">Submit</button>
         </div>
             
           </form>
