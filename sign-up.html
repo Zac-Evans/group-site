@@ -64,6 +64,7 @@
                     shirt: "",
                 }
          function formSubmitted() {
+             event.preventDefault();
                 var theSize = document.getElementById("shirt_size")
                 var contactForm =  {
                     'name': document.getElementById("form_name").value,
@@ -74,7 +75,7 @@
                 console.log (contactForm);
          }
             
-            event.preventDefault();
+            
         </script>
     </head>
     <body>
